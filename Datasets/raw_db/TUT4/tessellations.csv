@@ -1,0 +1,6 @@
+building,floor,site,tile,tessellation_type,coord_a_x,coord_a_y,coord_b_x,coord_b_y,coord_c_x,coord_c_y,coord_d_x,coord_d_y
+0,0,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+0,3,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+0,1,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+0,2,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+0,4,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL

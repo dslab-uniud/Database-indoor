@@ -1,0 +1,4 @@
+building,floor,floor_number,site,site_height,site_area,floor_height,floor_area,building_area
+1,0,0,NULL,NULL,NULL,3.5,NULL,NULL
+1,1,1,NULL,NULL,NULL,3.5,NULL,NULL
+1,2,2,NULL,NULL,NULL,3.5,NULL,NULL
