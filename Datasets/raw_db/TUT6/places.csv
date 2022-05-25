@@ -1,5 +1,3 @@
-building,floor,floor_number,site,site_height,site_area,floor_height,floor_area,building_area
-0,0,0,NULL,NULL,NULL,3.7,NULL,NULL
-0,3,3,NULL,NULL,NULL,3.7,NULL,NULL
-0,2,2,NULL,NULL,NULL,3.7,NULL,NULL
-0,1,1,NULL,NULL,NULL,3.7,NULL,NULL
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf4db1c5deb8608cf25f72c4862ef47a2303a4e9acfedbaaf4ec9d7f2e65fcc3
+size 233

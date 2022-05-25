@@ -1,22 +1,3 @@
-device_id,device_model,device_manufacturer,device_type,notes
-0,T1 7.0,Huawei,smartphone,NULL
-1,x600,LeTV,smartphone,NULL
-2,MI 4LTE,Xiaomi,smartphone,NULL
-3,MI MAX 2,Xiaomi,smartphone,NULL
-4,SM-A510F,Samsung,smartphone,NULL
-5,MX4 Pro,Meizu,smartphone,NULL
-6,E5823,Sony,smartphone,NULL
-7,Transformer Prime TF201,ASUS,smartphone,NULL
-9,LG-D625,LGE,smartphone,NULL
-10,XT1068,Motorola,smartphone,NULL
-12,SM-A310F,Samsung,smartphone,NULL
-16,A6020a40,Lenovo,smartphone,NULL
-17,Y360-U61,Huawei,smartphone,NULL
-18,Nexus 7,ASUS,smartphone,NULL
-23,LG-H815,LGE,smartphone,NULL
-63,PRO 5,Meizu,smartphone,NULL
-84,SGP771,Sony,smartphone,NULL
-278,SF1,Obi,smartphone,NULL
-1231,Nexus 6,Motorola,smartphone,NULL
-2174,SM-N910F,Samsung,smartphone,NULL
-433,One M9,HTC,smartphone,NULL
+version https://git-lfs.github.com/spec/v1
+oid sha256:b97a10b66c95e732a744da27276f4b9f697c4ab81fc3a358b279f2e9a8ce6eb9
+size 762

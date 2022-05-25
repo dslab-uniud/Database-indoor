@@ -1,2 +1,3 @@
-device_id,device_model,device_manufacturer,device_type,notes
-1,NULL,NULL,NULL,NULL
+version https://git-lfs.github.com/spec/v1
+oid sha256:749dadc0196465a675a22d7dd41154b594fa97d66b66aad0312b9607ea477ce0
+size 82

@@ -1,4 +1,3 @@
-building,floor,site,tile,tessellation_type,coord_a_x,coord_a_y,coord_b_x,coord_b_y,coord_c_x,coord_c_y,coord_d_x,coord_d_y
-1,0,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-1,1,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
-1,2,NULL,crowd_tile_1,crowd,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+version https://git-lfs.github.com/spec/v1
+oid sha256:12ef4bf04689c7e3222dd59c79e516025d9fb1217693ca73b3e814c5133cdcbd
+size 327

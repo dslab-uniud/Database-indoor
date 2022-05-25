@@ -1,3 +1,3 @@
-building,floor,floor_number,site,site_height,site_area,floor_height,floor_area,building_area
-library,3,3,main_room,2.65,NULL,2.65,NULL,NULL
-library,5,5,main_room,2.65,NULL,2.65,NULL,NULL
+version https://git-lfs.github.com/spec/v1
+oid sha256:fab0db9146b2fd8db8aa5fd1420db380d55c730bb4a7e7be9a9f4a8c6c0bb229
+size 187
