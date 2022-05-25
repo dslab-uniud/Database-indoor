@@ -1,0 +1,18 @@
+# UJI1
+
+This directory contains the dataset UJI1, converted to satisfy the format expected by the indoor database loading procedure.
+
+The dataset has been collected at the Universitat Jaume I, and in the literature it is usually referred to as UJIIndoorLoc. It models a large and complex multi-building scenario. More information can be found in the paper [UJIIndoorLoc: A new multi-building and multi-floor database for WLAN fingerprint-based indoor localization problems](https://ieeexplore.ieee.org/document/7275492).
+
+## Files included
+
+* files in the format expected by the indoor database loading procedure:
+  * [devices.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/devices.csv)
+  * [users.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/users.csv)
+  * [places.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/places.csv)
+  * [tessellations.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/tessellations.csv)
+  * [adjacences.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/adjacences.csv)
+  * [fingerprints.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/fingerprints.csv)
+  * [wifi_obs.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/wifi_obs.csv)
+* zipped directory containing the [original dataset](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/UJI_original.zip), divided into training and test data
+* [Jupyter notebook](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/uji_convert.ipynb) to convert the original dataset into our proposed format. It generates all files except for "devices.csv", "users.csv", and "adjacences.csv" which have been assembled by hand.
