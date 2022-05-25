@@ -1,0 +1,3 @@
+building,floor,floor_number,site,site_height,site_area,floor_height,floor_area,building_area
+library,3,3,main_room,2.65,NULL,2.65,NULL,NULL
+library,5,5,main_room,2.65,NULL,2.65,NULL,NULL
