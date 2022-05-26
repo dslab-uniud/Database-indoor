@@ -4,7 +4,7 @@ This directory collects a series of well-known datasets. Each of them has been c
 
 The following datasets are included:
 * [**UJI1**](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets/raw_db/UJI1): it has been collected at the Universitat Jaume I, and in the literature it is usually referred to as UJIIndoorLoc. It models a large and complex multi-building scenario. 
-* **DSI1, DSI2, DSI_trajectories**: these datasets have been collected in the same building of the University of Minho, Portugal. The first one is obtained from the second one by removing fingerprints sampled at the same reference position. As for the third one, it contains a single trajectory of fingeprints collected by a user. 
+* **[DSI1](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets/raw_db/DSI1), DSI2, DSI_trajectories**: these datasets have been collected in the same building of the University of Minho, Portugal. The first one is obtained from the second one by removing fingerprints sampled at the same reference position. As for the third one, it contains a single trajectory of fingeprints collected by a user. 
 * **LIB1, LIB2**: they model a two-floor library at the Universitat Jaume I, Spain. The main difference between them is in the acquisition date: 2016 for the former, and 2017 for the latter. 
 * **SIM001, SIM001, SIM002, SIM003, SIM004, SIM005, SIM006, SIM007, SIM008, SIM009, SIM010**: these are synthetic datasets, generated accoording to a simple path loss model with additive Gaussian noise.
 * **TUT1, TUT2, TUT3, TUT4, TUT5, TUT6, TUT7
