@@ -14,6 +14,6 @@ The dataset has been collected at the FEIT Building at University of Technology 
   * [adjacences.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/UTS/adjacences.csv)
   * [fingerprints.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/UTS/fingerprints.csv)
   * [wifi_obs.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/UTS/wifi_obs.csv)
-* the tesselation strategy used to import the dataset is the _crowd_ one.
+* the tesselation strategy used to import the dataset is the _logical_ one.
 * directory containing the [original dataset](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/raw_datasets/UTS/) in Python pickle format.
 * [Jupyter notebook](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/uts_convert.ipynb) to convert the original dataset into our proposed format. It generates all files except for "devices.csv", and "users.csv" which have been assembled by hand.
