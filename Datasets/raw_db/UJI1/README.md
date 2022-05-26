@@ -15,5 +15,5 @@ The dataset has been collected at the Universitat Jaume I, and in the literature
   * [fingerprints.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/fingerprints.csv)
   * [wifi_obs.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/UJI1/wifi_obs.csv)
 * the tesselation strategy used to import the dataset is the _logical_ one;
-* directory containing the [original dataset](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/raw_datasets/UJI1/), divided into training and test data
+* directory containing the [original dataset](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/raw_datasets/UJI1/), divided into training and test data. Such directory contains also (a portion of) the adjacency relationships between the tiles/places reconstructed looking at the [original map](http://indoorloc.uji.es/webviewer/#).
 * [Jupyter notebook](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_db/uji_convert.ipynb) to convert the original dataset into our proposed format. It generates all files except for "devices.csv", "users.csv", and "adjacences.csv" which have been assembled by hand.
