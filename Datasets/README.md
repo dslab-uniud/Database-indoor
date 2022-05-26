@@ -3,7 +3,11 @@
 This directory collects a series of well-known datasets. Each of them has been converted into a format (that is explained in the remainder of this README file) that makes it ready to be imported in the indoor positioning database by means of the procedure LINK 
 
 The following datasets are included:
-* [UJI1](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets/UJI1): it has been collected at the Universitat Jaume I, and in the literature it is usually referred to as UJIIndoorLoc. It models a large and complex multi-building scenario. More information can be found [here](https://ieeexplore.ieee.org/document/7275492)
+* [**UJI1**](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets/raw_db/UJI1): it has been collected at the Universitat Jaume I, and in the literature it is usually referred to as UJIIndoorLoc. It models a large and complex multi-building scenario. 
+* **DSI1, DSI2, DSI_trajectories**: these datasets have been collected in the same building of the University of Minho, Portugal. The first one is obtained from the second one by removing fingerprints sampled at the same reference position. As for the third one, it contains a single trajectory of fingeprints collected by a user. 
+* **LIB1, LIB2**: they model a two-floor library at the Universitat Jaume I, Spain. The main difference between them is in the acquisition date: 2016 for the former, and 2017 for the latter. 
+* **SIM001, SIM001, SIM002, SIM003, SIM004, SIM005, SIM006, SIM007, SIM008, SIM009, SIM010**: these are synthetic datasets, generated accoording to a simple path loss model with additive Gaussian noise.
+* **TUT1, TUT2, TUT3, TUT4, TUT5, TUT6, TUT7
 
 They key idea is that each premise, at its most detailed level of representation, includes a set of tiles. For instance, a building floor might have been associated to a tessellation following a grid strategy. Then, fingerprints may be collected at specific tiles. Also the adjacency and reachability relationships among premises are modeled at the tile level. For more information, please refer to the paper presenting the database.
 
