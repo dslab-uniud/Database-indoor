@@ -24,7 +24,10 @@ Each dataset should be described by a series of CSV (comma-separated) files. Som
 * **tessellations.csv**: it contains all information regarding the defined tessellations and their tiles (MANDATORY)
 * **adjacences.csv**: it contains all information related to the adjacences and reachability among tiles (OPTIONAL)
 * **fingerprints.csv**: it contains all the meta-information pertaining to the collected fingerprints (MANDATORY)
-* **wifi_obs.csv**: it contains all information related to the wifi observations pertaining to the fingerprints (OPTIONAL)
+* **wifi_obs.csv**: it contains all information related to the WiFi observations pertaining to the fingerprints (OPTIONAL)
+* **blue_obs.csv**: it contains all information related to the Bluetooth observations pertaining to the fingerprints (OPTIONAL)
+* **gnss_obs.csv**: it contains all information related to the GNSS observations pertaining to the fingerprints (OPTIONAL)
+* **imu_obs.csv**: it contains all information related to the IMU observations pertaining to the fingerprints (OPTIONAL)
 * \[other possible observation files related to the fingerprints\] 
 
 
@@ -177,7 +180,7 @@ In every file described in the following:
 		
 		
 
-### bluetooth_obs.csv:
+### blue_obs.csv:
 * Columnns:
   * **fingerprint_id**: identifier of a fingerprint used to link information from file "fingerprints.csv" (MANDATORY, integer)
   * **BL-xxx-mac**: each attribute of this kind contains the received RSS (numeric) from the respective access point, labeled following the convention
@@ -185,6 +188,40 @@ In every file described in the following:
 * Usage notes:
   * in BL-xxx-mac, xxx represents the code of the access point used within the dataset (it can be a simple numeric incremental value as in the dataset IPIN 2021), while mac represents the mac address of the respective bluetooth beacon (if not present, it can be set as the word NULL)
   * e.g., in the file I may find the attributes: BL-BLE001-NULL, BL-BLE002-NULL, ...	
+
+
+
+### gnss_obs.csv:
+* Columnns:
+  * **fingerprint_id**: identifier of a fingerprint used to link information from file "fingerprints.csv" (MANDATORY, integer)
+  * **latitude**: latitude information of the observation (OPTIONAL, numeric)
+  * **longitude**: longitude information of the observation (OPTIONAL, numeric)
+  * **elevation**: elevation information of the observation (OPTIONAL, numeric)
+  * **num_satellites**: number of satellites used within the observation (OPTIONAL, integer)
+* Usage notes:
+  * every field is optional, since a GNSS observation may not have any associated coordinates (consider an observation performed underground)
+
+
+
+
+### imu_obs.csv:
+* Columnns:
+  * **fingerprint_id**: identifier of a fingerprint used to link information from file "fingerprints.csv" (MANDATORY, integer)
+  * **epoch**: integer value used to sort the IMU recordings pertaining to a given IMU observation; in the database it is represented as an integer that, in principle, it can represent an epoch value (MANDATORY, integer)
+  * **acc_x**: accelerometer data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **acc_y**: accelerometer data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **acc_z**: accelerometer data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **mag_x**: magnetometer data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **mag_y**: magnetometer data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **mag_z**: magnetometer data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **gyr_x**: gyroscope data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **gyr_y**: gyroscope data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+  * **gyr_z**: gyroscope data related to the same fingerprint and, thus, IMU observation (OPTIONAL, numeric)
+* Usage notes:
+  * each row represents an IMU data pertaining to an IMU observation
+  * note that a given IMU observation may have several IMU data related to it
+  * those data represent differential information with respect to an IMU observation connected to an immediately preceding fingerprint
+  * the amount of data for the different IMU sensors need not to be equal. For instance, the accelerometer may sample data at a different pace than the magnetometer
 
 
 
@@ -210,5 +247,10 @@ During the import process, information sharing has only been partially implement
 * if a device model is already present in the database public schema, then it will not be imported
 * if a tuple of a data source is already present in the database public schema, then the import will halt
 
-All other kinds of redundancies/information sharing will have - at least for now - to be handled after the import process, throught a series of update statements to be performed directly on the indoor positioning database.
+All other kinds of redundancies/information sharing will have - at least for now - to be handled after the import process, throught a series of update statements to be performed directly on the indoor positioning database. 
+
+As for the import process, it is handled by the following files:
+* [data_import.ipynb](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/data_import.ipynb): it handles the import process of a new dataset into the database
+* [merge_dataset_information.sql](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/merge_dataset_information.sql): it contains a list of queries that can be used to merge information that are in common between two different datasets (e.g., if they consider the same premises)
+* [verify_dataset_info.sql](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/verify_dataset_info.sql): it contains a set of queries that are useful to verify the correctness of the information stored in the database
 
