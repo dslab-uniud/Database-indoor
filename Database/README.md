@@ -25,3 +25,6 @@ The overall logical schema implemented by the DDL script is as follows (clicking
 
 
 ## Implemented User Defined Functions
+
+Some useful User Defined Functions have already been implemented within the DDL code that deploys the database. They include:
+* aagagagaga: gagagasgagsagaga
