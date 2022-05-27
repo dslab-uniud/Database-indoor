@@ -41,7 +41,7 @@ password = tSUD22$Indo0r
 ```
 The database comes already populated with information originating from the datasets listed [here](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets).
 Some user defined functions aimed at easing the interaction have been implemented and can be found [here](https://github.com/dslab-uniud/Database-indoor/tree/main/Database#implemented-user-defined-functions).
-Examples of queries on the database are reported [here](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/exemplary_SQL.sql)0
+Examples of queries on the database are reported [here](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/exemplary_SQL.sql).
 
 ### Entity-Relationship diagram notation
 
