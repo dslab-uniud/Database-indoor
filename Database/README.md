@@ -23,3 +23,5 @@ The overall logical schema implemented by the DDL script is as follows (clicking
 <img src="https://user-images.githubusercontent.com/45127628/170011003-fc2e5b72-3e69-4fe6-8d15-e3222fc01237.png" alt="Overall Logical Schema of the Database" />
 </p>
 
+
+## Implemented User Defined Functions
