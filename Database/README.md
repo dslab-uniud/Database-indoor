@@ -2,7 +2,7 @@
 
 This directory contains:
 * the DDL (Data Definition Language) SQL code that can be used to deploy the relational indoor positioning database into a running Postgres database instance
-* the Jupyter notebook that performs the import of a dataset, encoded according to [our proposed format](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/README.md), into the indoor positioning database
+* the [Jupyter notebook](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/data_import.ipynb) that performs the import of a dataset, encoded according to [our proposed format](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/README.md), into the indoor positioning database
 * a file containing some exemplary SQL queries that can be run over the data contained in the indoor positioning database
 
 
