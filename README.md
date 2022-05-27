@@ -2,7 +2,8 @@
 
 <div align="center">  
   
-# A Framework for the Joint Modeling of Indoor Positioning and Building Topology    
+  
+# A Framework for Indoor Positioning including Building Topology
   
 </div>
 
