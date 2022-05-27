@@ -3,9 +3,9 @@
 This directory contains:
 * the DDL (Data Definition Language) SQL code that can be used to deploy the relational indoor positioning database into a running Postgres database instance
 * a set of files that can be used to handle the import process of data into the database
-** [data_import.ipynb](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/data_import.ipynb) that performs the import of a new dataset, encoded according to [our proposed format](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/README.md), into the indoor positioning database
-** [merge_dataset_information.sql](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/merge_dataset_information.sql): it contains a list of queries that can be used to merge information that are in common between two different datasets (e.g., if they consider the same premises)
-** [verify_dataset_info.sql](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/verify_dataset_info.sql): it contains a set of queries that are useful to verify the correctness of the information stored in the database
+  ** [data_import.ipynb](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/data_import.ipynb) that performs the import of a new dataset, encoded according to [our proposed format](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/README.md), into the indoor positioning database
+  ** [merge_dataset_information.sql](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/merge_dataset_information.sql): it contains a list of queries that can be used to merge information that are in common between two different datasets (e.g., if they consider the same premises)
+  ** [verify_dataset_info.sql](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/verify_dataset_info.sql): it contains a set of queries that are useful to verify the correctness of the information stored in the database
 * a file containing some exemplary SQL queries that can be run over the data contained in the indoor positioning database
 
 
