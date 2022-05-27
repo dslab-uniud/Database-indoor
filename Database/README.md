@@ -1,7 +1,7 @@
 # Database
 
 This directory contains:
-* the DDL (Data Definition Language) SQL code that can be used to deploy the relational indoor positioning database into a running Postgres database instance. Specifically, the DDL script builds 4 schemas:
+* the [DDL (Data Definition Language) SQL code](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/DDL.sql) that can be used to deploy the relational indoor positioning database into a running Postgres database instance. Specifically, the DDL script builds 4 schemas:
   * **public**: the main database schema, where the indoor positioning data is stored (red circled areas in the picture above)
   * **evaluation_support**: it contains just the table ground_truth_info, which is useful for the evaluation of indoor positioning approaches (blue shaded area in the picture above)
   * **data_staging**: it holds temporary information that help to carry out the import process of new data into the database
