@@ -2021,6 +2021,7 @@ create index idx_fingerprint_radio_map on fingerprint(is_radio_map);
 create index idx_fingerprint_ml_purpose on fingerprint(ml_purpose);
 create index idx_fingerprint_data_source_id on fingerprint(data_source_id);
 create index idx_fingerprint_acquired_at_tile_place_id on fingerprint(acquired_at_tile_place_id);
+create index idx_fingerprint_type on fingerprint(type);
 
 create index idx_place_name on place(name);
 
