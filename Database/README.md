@@ -29,3 +29,12 @@ The overall logical schema implemented by the DDL script is as follows (clicking
 Some useful User Defined Functions have already been implemented within the DDL code that deploys the database. They include:
 * `data_staging.copy_tables()`: it is a helper function, used within the import process, to move data from the data_staging to the public schema of the database
 * `data_staging.truncate_tables(schemaname_in VARCHAR)`: it is a helper function, used within the import process, to truncate all the data contained within a given database schema; specifically, it is used to clean the data_staging schema at the beginning of each new import process
+* `array_reverse(anyarray)`: given an array, it returns its reverse
+* `euclidean_distance(l numeric[], r numeric[])`: given two numeric arrays representing coordinates, it returns the euclidean distance between the two
+* `reachability_dijkstra(starting_tile_id_in integer, target_tile_set integer[], cost_or_hops varchar default 'hops')`: given two tile IDs and a strategy to calculate the path cost (either the number of hops or the cost stored into the table adjacent_to_tile), it returns the shortest path between the two input tiles in terms of IDs of the tiles thave have to be traversed, together with its cost and number of hops
+* `FindRelatedTiles(object_id integer, object_type varchar)`: given an object identifier and its type, returns an array of tiles associated with it
+* `MinimumShortestPath(start_id integer, end_id integer, start_obj_type varchar default 'tile', end_obj_type varchar default 'tile', cost_or_hops varchar default 'hops')`: given two object identifiers and their types, among fingerprint, estimation, tile, site, and floor, find the minimum shortest path between them
+* `FPDistances(fp1_id integer, fp2_id integer, f1_type varchar default 'fingerprint', f2_type varchar default 'fingerprint')`: given two fingerprint (or estimation) identifiers, it returns the 2D and 3D euclidean distances between them and the minimum shortest path to go from the location associated with one fingeprint to that of the other
+* `FPDistances(obj_id integer)`: given a tile identifier returns the avarage (WiFi) fingerprint that represent it
+* `GetTrajectory(f_id integer)`: given a fingerprint identifier returns the trajectory (array of fingerprint identifierds) to which it belongs
+* `TrajectoriesInPlace(obj_id integer, obj_type varchar default 'tile')`: given a place identifier (tile, site, or floor) returns all the trajectories passing trought it
