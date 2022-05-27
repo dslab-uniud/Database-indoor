@@ -37,4 +37,4 @@ Some useful User Defined Functions have already been implemented within the DDL 
 * `FPDistances(fp1_id integer, fp2_id integer, f1_type varchar default 'fingerprint', f2_type varchar default 'fingerprint')`: given two fingerprint (or estimation) identifiers, it returns the 2D and 3D euclidean distances between them and the minimum shortest path to go from the location associated with one fingeprint to that of the other
 * `FPDistances(obj_id integer)`: given a tile identifier returns the avarage (WiFi) fingerprint that represent it
 * `GetTrajectory(f_id integer)`: given a fingerprint identifier returns the trajectory (array of fingerprint identifierds) to which it belongs
-* `TrajectoriesInPlace(obj_id integer, obj_type varchar default 'tile')`: given a place identifier (tile, site, or floor) returns all the trajectories passing trought it
+* `TrajectoriesInPlace(obj_id integer, obj_type varchar default 'tile')`: given a place identifier (tile, site, or floor) and its type returns all the trajectories passing trought it
