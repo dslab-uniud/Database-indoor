@@ -39,9 +39,9 @@ A read-only user, that has the privileges to perform `SELECT` operations over th
 username = tester@indoor.uniud.it
 password = tSUD22$Indo0r
 ```
-The database comes already populated with information originating from the datasets listed [here](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets)
-Some user defined functions aimed at easing the interaction have been implemented and can be found [here](https://github.com/dslab-uniud/Database-indoor/tree/main/Database#implemented-user-defined-functions)
-Examples of queries on the database are reported [here](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/exemplary_SQL.sql)
+The database comes already populated with information originating from the datasets listed [here](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets).
+Some user defined functions aimed at easing the interaction have been implemented and can be found [here](https://github.com/dslab-uniud/Database-indoor/tree/main/Database#implemented-user-defined-functions).
+Examples of queries on the database are reported [here](https://github.com/dslab-uniud/Database-indoor/blob/main/Database/exemplary_SQL.sql)0
 
 ### Entity-Relationship diagram notation
 
