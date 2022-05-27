@@ -27,5 +27,5 @@ The overall logical schema implemented by the DDL script is as follows (clicking
 ## Implemented User Defined Functions
 
 Some useful User Defined Functions have already been implemented within the DDL code that deploys the database. They include:
-* **data_staging.copy_tables**: it is a helper function, used within the import process, to move data from the data_staging to the public schema of the database
-* **data_staging.truncate_tables**: it is a helper function, used within the import process, to truncate all the data contained within a given database schema; specifically, it is used to clean the data_staging schema at the beginning of each new import process
+* **data_staging.copy_tables()**: it is a helper function, used within the import process, to move data from the data_staging to the public schema of the database
+* **data_staging.truncate_tables(schemaname_in VARCHAR)**: it is a helper function, used within the import process, to truncate all the data contained within a given database schema; specifically, it is used to clean the data_staging schema at the beginning of each new import process
