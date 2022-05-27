@@ -24,9 +24,9 @@ The database schema, which is depcited in the figure above, is divided into four
 * **data_source sub-schema**: it stores informaton regarding data lineage
 
 The current repository includes:
-* the code to set up the database within a Postgres database instance: link
-* the code to import a new dataset into the database: link
-* the code of some queries that show how to use the database: link
+* the code to set up the database within a Postgres database instance: [link](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/DDL.sql)
+* the code to import a new dataset into the database: [link](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/import_data.ipynb)
+* the code of some queries that show how to use the database: [link](https://github.com/dslab-uniud/Database-indoor/tree/main/Database/exemplary_SQL.sql)
 * some well-known and widely-used datasets that have already been converted into the format expected by the import procedure: [link](https://github.com/dslab-uniud/Database-indoor/tree/main/Datasets)
 
 The database is highly modular, and can be easily extended to handle specific usage needs.
