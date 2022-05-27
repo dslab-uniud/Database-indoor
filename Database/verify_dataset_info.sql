@@ -1,4 +1,4 @@
--- These are just some exemplary queries that can be used to verify the information that has been inserted in the database
+-- These are just some exemplary queries that can be used to verify the information that has been inserted into the database
 
 
 select *
