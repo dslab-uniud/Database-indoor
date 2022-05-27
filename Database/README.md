@@ -15,6 +15,8 @@ This directory contains:
 * a file containing some exemplary SQL queries that can be run over the data contained in the indoor positioning database
 
 
+## Database logical schema
+
 The overall logical schema implemented by the DDL script is as follows (clicking opens up a hi-res version of the picture):
 
 <p align="center">
