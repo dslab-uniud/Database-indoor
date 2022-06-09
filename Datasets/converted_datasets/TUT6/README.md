@@ -14,4 +14,4 @@ All TUT datasets have been collected at the Tampere University, Finland. TUT1, T
   * [wifi_obs.csv](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/converted_datasets/TUT6/wifi_obs.csv)
 * the tessellation strategy used to import the dataset is the _crowd_ one.
 * directory containing the [original dataset](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/raw_datasets/TUT/TUT6/) in Python pickle format.
-* [Jupyter notebook](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/tut_convert.ipynb) to convert the original dataset into our proposed format. It generates all files except for "devices.csv", and "users.csv" which have been assembled by hand.
+* [Jupyter notebook](https://github.com/dslab-uniud/Database-indoor/blob/main/Datasets/tut_convert.ipynb) to convert the original dataset into our proposed format. 
