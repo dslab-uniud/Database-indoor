@@ -2,7 +2,7 @@
 
 This directory contains the dataset IPIN21_Track3, converted to satisfy the format expected by the indoor database loading procedure.
 
-The dataset is interesting as it includes fingerprint trajectories. In addition, fingerprints are quite heterogeneous since they may contain information pertaining to Bluetooth, GNSS, IMU, or WiFi signals. [Link to the original source](http://indoorloc.uji.es/ipin2021track3/)
+The dataset was used within the "IPIN 2021 Indoor Localization Competition: Track 3 Smartphone-based (off-site)", and it is interesting as it includes fingerprint trajectories. In addition, fingerprints are quite heterogeneous since they may contain information pertaining to Bluetooth, GNSS, IMU, or WiFi signals. Here, only the training data split is considered. [Link to the original source](http://indoorloc.uji.es/ipin2021track3/)
 
 
 ## Files included
