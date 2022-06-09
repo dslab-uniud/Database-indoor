@@ -2,7 +2,7 @@
 
 This directory contains the dataset DSI_trajectories, converted to satisfy the format expected by the indoor database loading procedure.
 
-DSI_trajectories has been collected in the same building of the University of Minho, Portugal as the datasets DSI~1 and DSI~2. As a difference with respect to the latter two ones, DSI_trajectories includes fingerprint trajectories.. [Link to the original source](https://zenodo.org/record/3778646#.YnPqGNpByUk)
+DSI_trajectories has been collected in the same building of the University of Minho, Portugal as the datasets DSI1 and DSI2. As a difference with respect to the latter two ones, DSI_trajectories includes fingerprint trajectories.. [Link to the original source](https://zenodo.org/record/3778646#.YnPqGNpByUk)
 
 
 ## Files included
