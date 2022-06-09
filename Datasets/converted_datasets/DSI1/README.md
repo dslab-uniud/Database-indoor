@@ -2,7 +2,7 @@
 
 This directory contains the dataset DSI1, converted to satisfy the format expected by the indoor database loading procedure.
 
-DSI~1 and DSI~2 have been collected in the same building of the University of Minho, Portugal. The first one is obtained from the second one by removing fingerprints (FPs) sampled at the same RP. [Link to the original source](https://zenodo.org/record/3778646#.YnPqGNpByUk)
+Datasets DSI1 and DSI2 have been collected in the same building of the University of Minho, Portugal. The first one is obtained from the second one by removing fingerprints (FPs) sampled at the same RP. [Link to the original source](https://zenodo.org/record/3778646#.YnPqGNpByUk)
 
 
 ## Files included
