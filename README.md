@@ -51,7 +51,7 @@ Here we describe, by means of a series of examples, the notation employed in the
 <img src="https://user-images.githubusercontent.com/11720495/167114573-43821183-cbf9-47da-a196-970795fa8fbf.png" alt="Strong entity set notation" />
 </p>
 
-The folliwing figure reports the case of a weak entity set, named _Song_, that has the attribute _Title_ as its partial identifier. Its identifying relationship is _Belongs to_, thus, the title of a song is unique within a given album. The entity set _Album_ has _Name_ as its primary key. Each album contains one or more songs, and a song belongs to one and only one album (the constraint `1:1` is assumed by default by our notation, and thus has been omitted on the _Song_ side of the relationship).
+The following figure reports the case of a weak entity set, named _Song_, that has the attribute _Title_ as its partial identifier. Its identifying relationship is _Belongs to_, thus, the title of a song is unique within a given album. The entity set _Album_ has _Name_ as its primary key. Each album contains one or more songs, and a song belongs to one and only one album (the constraint `1:1` is assumed by default by our notation, and thus has been omitted on the _Song_ side of the relationship).
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/11720495/167114364-410bc3cb-febd-4525-862b-20d69ee77e41.png" alt="Weak entity set notation" />
@@ -60,14 +60,16 @@ The folliwing figure reports the case of a weak entity set, named _Song_, that h
 The notation for a total and disjoint specialization is showed below. Each entity of entity set _Professor_ is uniquely identified by its _SSN_, and it corresponds to either a _Full_ or an _Associate_ professor.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/11720495/167114699-341eac19-d438-4d24-82e2-06615a9f3aca.png" alt="Total specialization notation" />
+<img width=520 src="https://user-images.githubusercontent.com/45127628/178000591-45954c16-8f8f-4322-b2a5-4e0997305231.png" alt="Total specialization notation" />
 </p>
 
 Finally, we report the case of a partial specialization. Here, an entity of entity set _Employee_, uniquely identified by its _SSN_, can also be an entity of entity set _Supervisor_. This is quite natural, since supervisors are themselves employees, but not all employees are supervisors.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/11720495/167114720-6c3cd3ea-e23c-44fe-9150-06199218ba6f.png" alt="Partial specialization notation" />
+<img width=350 src="https://user-images.githubusercontent.com/45127628/178000860-8086ed31-1360-4bb9-8607-3404b0689be2.png" alt="Partial specialization notation" />
 </p>
+
+
 
 
 <!---
