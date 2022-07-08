@@ -14,7 +14,7 @@ This is the home page of the relational indoor positioning database project, dev
 The database aims to pose itself as an integrated and generalizable framework to store, manage and leverage fingeprint positioning data collected by multiple sensors within indoor premises.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/11720495/167165947-d5138baf-c243-4f97-ba53-7a44d8e56aae.png" alt="Overall Entity-Relationship diagram" />
+<img src="https://user-images.githubusercontent.com/45127628/178003313-f85ec81f-80c6-46c7-b33a-51a54ef6edae.png" alt="Overall Entity-Relationship diagram" />
 </p>
 
 The database schema, which is depcited in the figure above, is divided into four main sub-schemas:
@@ -50,6 +50,7 @@ Here we describe, by means of a series of examples, the notation employed in the
 <p align="center">
 <img src="https://user-images.githubusercontent.com/11720495/167114573-43821183-cbf9-47da-a196-970795fa8fbf.png" alt="Strong entity set notation" />
 </p>
+
 
 The following figure reports the case of a weak entity set, named _Song_, that has the attribute _Title_ as its partial identifier. Its identifying relationship is _Belongs to_, thus, the title of a song is unique within a given album. The entity set _Album_ has _Name_ as its primary key. Each album contains one or more songs, and a song belongs to one and only one album (the constraint `1:1` is assumed by default by our notation, and thus has been omitted on the _Song_ side of the relationship).
 
