@@ -1914,11 +1914,37 @@ BEGIN
         WHERE EXISTS (SELECT * FROM contains as cont2 WHERE cont1.contained_place_id = cont2.contained_place_id and cont1.container_place_id != cont2.container_place_id);
 
 
+
+
+
+        -- ok if it is a logical or zone tile and it is contained both in a floor, as well as in a site which is in turn contained in that same floor
+        DROP TABLE IF EXISTS tmp_tile_multiply_contained_ok;
+
+        CREATE TEMPORARY TABLE tmp_tile_multiply_contained_ok AS
+        SELECT DISTINCT tile.place_id
+        FROM tile
+                JOIN contains as cont1 on cont1.contained_place_id = tile.place_id
+                JOIN floor as f1 on cont1.container_place_id = f1.place_id
+        WHERE tile.type in ('logical', 'zone')
+                AND EXISTS (SELECT *
+                            FROM site 
+                                    JOIN contains as cont2 on cont2.container_place_id = site.place_id and cont2.contained_place_id = tile.place_id
+                                    JOIN contains as contains_site on cont2.contained_place_id = site.place_id 
+                            WHERE contains_site.container_place_id = f1.place_id 
+                            );
+
+        CREATE UNIQUE INDEX idx_tmp_tile_multiply_contained_ok on tmp_tile_multiply_contained_ok(place_id);
+
         INSERT INTO tmp_violations_inner
         SELECT 'inconsistent_place_hierarchy_tile_multiply_contained', 'ID of a tile that appears more than one time in a containment relationship as a contained place', array[cont1.contained_place_id]
         FROM contains as cont1
                 JOIN tile on cont1.contained_place_id = tile.place_id
-        WHERE EXISTS (SELECT * FROM contains as cont2 WHERE cont1.contained_place_id = cont2.contained_place_id and cont1.container_place_id != cont2.container_place_id);
+        WHERE EXISTS (SELECT * FROM contains as cont2 WHERE cont1.contained_place_id = cont2.contained_place_id and cont1.container_place_id != cont2.container_place_id)
+                and NOT EXISTS (SELECT * FROM tmp_tile_multiply_contained_ok as tmptab where tmptab.place_id = tile.place_id);
+
+        
+
+
 
 
         INSERT INTO tmp_violations_inner
