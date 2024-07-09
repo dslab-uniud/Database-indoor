@@ -17,7 +17,7 @@ The database aims to pose itself as an integrated and generalizable framework to
 <img src="https://user-images.githubusercontent.com/45127628/178003313-f85ec81f-80c6-46c7-b33a-51a54ef6edae.png" alt="Overall Entity-Relationship diagram" />
 </p>
 
-The database schema, which is depcited in the figure above, is divided into four main sub-schemas:
+The database schema, which is depicted in the figure above, is divided into four main sub-schemas:
 * **fingerprint sub-schema**: it stores information regarding collected (trajectories of) fingerprints, such as their exact sampling location (e.g., if they belong to the radio-map), the users that collected them, and the employed devices
 * **observation sub-schema**: it stores information regarding a series of data that may have been observed by multiple sensors, including Wi-Fi, Bluetooth, GNSS, Cellular and Inertial Measurement Unit signals, that are all linked to a fingerprint
 * **place sub-schema**: it stores informaton regarding the structure of indoor premises, including all and limited to the data that are useful for positioning purposes (such as containment and adjacency relationships between locations), without any pretense (or actual need) of being capable of representing the actual layout of the premises
